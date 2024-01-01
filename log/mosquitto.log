@@ -1,0 +1,34 @@
+1704129096: mosquitto version 2.0.18 starting
+1704129096: Config loaded from /mosquitto/config/mosquitto.conf.
+1704129096: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1704129096: Opening ipv4 listen socket on port 1883.
+1704129096: Opening ipv6 listen socket on port 1883.
+1704129096: mosquitto version 2.0.18 running
+1704129096: New connection from 172.100.10.11:37176 on port 1883.
+1704129096: New client connected from 172.100.10.11:37176 as auto-9310A194-FDDD-C2B4-36CA-39F2E80D6652 (p2, c1, k60, u'admin').
+1704129096: Client auto-9310A194-FDDD-C2B4-36CA-39F2E80D6652 disconnected.
+1704129096: New connection from 172.100.10.12:35090 on port 1883.
+1704129096: New client connected from 172.100.10.12:35090 as auto-459B8939-2980-6FF1-6A2C-B581BF422FD7 (p2, c1, k60, u'admin').
+1704129102: Client auto-459B8939-2980-6FF1-6A2C-B581BF422FD7 disconnected.
+1704129102: mosquitto version 2.0.18 terminating
+1704129102: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704129106: mosquitto version 2.0.18 starting
+1704129106: Config loaded from /mosquitto/config/mosquitto.conf.
+1704129106: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1704129106: Opening ipv4 listen socket on port 1883.
+1704129106: Opening ipv6 listen socket on port 1883.
+1704129106: mosquitto version 2.0.18 running
+1704129107: New connection from 172.100.10.11:57130 on port 1883.
+1704129107: New client connected from 172.100.10.11:57130 as auto-870C7AB7-3DB5-9EB9-6D06-B81EA9E31E17 (p2, c1, k60, u'admin').
+1704129107: New connection from 172.100.10.12:55082 on port 1883.
+1704129107: New client connected from 172.100.10.12:55082 as auto-957B96E9-F1FB-1D4A-22E2-5B551116C21E (p2, c1, k60, u'admin').
+1704129107: Client auto-870C7AB7-3DB5-9EB9-6D06-B81EA9E31E17 disconnected.
+1704129885: New connection from 172.100.10.1:34296 on port 1883.
+1704129885: Client auto-5E498C5C-8E95-F37C-1FC0-FC7C10E0F2BB disconnected, not authorised.
+1704130062: New connection from 172.100.10.1:45336 on port 1883.
+1704130062: Client auto-BDE403A1-8DC1-C651-B084-02024F9A2317 disconnected, not authorised.
+1704130596: Client auto-957B96E9-F1FB-1D4A-22E2-5B551116C21E disconnected.
+1704130596: mosquitto version 2.0.18 terminating
+1704130596: Saving in-memory database to /mosquitto/data//mosquitto.db.

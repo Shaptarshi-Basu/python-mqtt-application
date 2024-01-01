@@ -1,0 +1,48 @@
+version: '3.9'
+
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  mqtt-broker:
+    image: eclipse-mosquitto:latest
+    user: mosquitto
+    volumes:
+      - type: bind
+        source: ./config/
+        target: /mosquitto/config/
+        read_only: false
+      - type: bind
+        source: ./log/
+        target: /mosquitto/log/
+        read_only: false
+      - type: volume
+        source: data
+        target: /mosquitto/data/
+    ports:
+      - target: 1883
+        published: 1883
+        protocol: tcp
+        mode: host
+      - target: 9001
+        published: 9001
+        protocol: tcp
+        mode: host
+
+  mqtt-publisher:
+    build:
+      context: .
+      dockerfile: Dockerfile_pub
+
+  mqtt-subscriber:
+    build:
+      context: .
+      dockerfile: Dockerfile_sub
+volumes:
+  data:
+    name: "mqtt-broker-data"
+  mongodb_data:
