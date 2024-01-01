@@ -1,2 +1,4 @@
 paho-mqtt
 pymongo
+fastapi
+fastapi[all]==0.68.1
