@@ -46,4 +46,4 @@ while True:
     except Exception as e:
         print(f"Error: {e}")
 
-    time.sleep(60)
+    time.sleep(60)  # Sleep for 1 second before the next iteration
