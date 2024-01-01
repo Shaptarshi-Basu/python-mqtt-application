@@ -37,11 +37,25 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_pub
+    depends_on:
+      - mqtt-broker  
 
   mqtt-subscriber:
     build:
       context: .
       dockerfile: Dockerfile_sub
+    depends_on:
+      - mqtt-broker  
+
+  mqtt-api:
+    build:
+      context: .
+      dockerfile: Dockerfile_api
+    depends_on:
+      - mqtt-broker
+      - mongo
+    ports:
+      - "8000:8000"
 volumes:
   data:
     name: "mqtt-broker-data"
